@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Naina Maurya — AI & Machine Learning Engineer Portfolio. Pursuing B.Tech CSE (AIML), building intelligent models and high-performance digital products.">
+    <title>Naina Maurya | AI & ML Engineer & Developer</title>
+
+    <!-- Google Fonts: Space Grotesk (Headings), Plus Jakarta Sans (Body), JetBrains Mono (Code/Accents) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons 6.5.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Smooth Glowing Cursor (Desktop) -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- Interactive 3D Canvas Background Constellation -->
+    <canvas id="bgCanvas"></canvas>
+
+    <!-- Ambient Luxury Radial Glows -->
+    <div class="ambient-glow glow-cyan"></div>
+    <div class="ambient-glow glow-indigo"></div>
+    <div class="ambient-glow glow-violet"></div>
+
+    <!-- Floating Pill Navigation Bar -->
+    <header class="navbar-wrapper">
+        <nav class="navbar-pill">
+            <a href="#home" class="nav-brand">
+                <span class="brand-avatar-mini">
+                    <img src="images/naina photo_page-0001.jpg" alt="Naina">
+                </span>
+                <span class="brand-name">Naina<span class="gradient-accent">.</span></span>
+            </a>
+
+            <button class="mobile-toggle" id="menuToggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-pill-link active">Home</a></li>
+                <li><a href="#about" class="nav-pill-link">About</a></li>
+                <li><a href="#skills" class="nav-pill-link">Skills</a></li>
+                <li><a href="#projects" class="nav-pill-link">Projects</a></li>
+                <li><a href="#achievements" class="nav-pill-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-pill-link">Contact</a></li>
+                <li class="nav-cta-item">
+                    <a href="#contact" class="btn btn-sm btn-primary btn-magnetic">
+                        <span>Let's Talk</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="mainContent">
+        <!-- ===================================================================
+             Hero Section
+             =================================================================== -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-text-content reveal">
+                    <div class="status-pill hero-status">
+                        <span class="pulse-dot"></span>
+                        <span>Available for Summer 2026 AI Internships</span>
+                    </div>
+
+                    <h1 class="hero-headline">
+                        Naina Maurya
+                        <span class="hero-title-sub">
+                            I engineer <span class="gradient-text" id="typingText">AI & Machine Learning</span><span class="typing-cursor">|</span>
+                        </span>
+                    </h1>
+
+                    <p class="hero-lead">
+                        B.Tech 2nd Year Computer Science student specializing in <strong>Artificial Intelligence & Machine Learning</strong>. Bridging state-of-the-art neural architectures with award-winning, interactive digital interfaces.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary btn-magnetic">
+                            <i class="fa-solid fa-rocket"></i>
+                            <span>Explore Work</span>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary btn-magnetic">
+                            <i class="fa-regular fa-paper-plane"></i>
+                            <span>Get in Touch</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-meta">
+                        <div class="meta-label">Connect & Code:</div>
+                        <div class="social-icon-row">
+                            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <button id="copyEmailBtn" class="email-copy-pill" data-email="naina.maurya.ai@gmail.com" title="Click to copy email">
+                                <i class="fa-regular fa-copy"></i>
+                                <span>Copy Email</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3D Micro-Tilt Profile Photo Showcase -->
+                <div class="hero-visual-wrapper reveal">
+                    <div class="hero-avatar-card">
+                        <div class="neon-glow-ring"></div>
+                        <div class="avatar-inner-frame">
+                            <img src="images/naina photo_page-0001.jpg" alt="Naina Maurya" class="avatar-photo">
+                        </div>
+
+                        <!-- Floating Badges -->
+                        <div class="floating-badge badge-top-left">
+                            <div class="badge-icon-box ai-glow">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <div class="badge-text">
+                                <span class="badge-sub">Specialization</span>
+                                <span class="badge-main">AI & ML Engineer</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-badge badge-bottom-right">
+                            <div class="badge-icon-box code-glow">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="badge-text">
+                                <span class="badge-sub">Craft</span>
+                                <span class="badge-main">Full-Stack Web</span>
+                            </div>
+                        </div>
+
+                        <div class="tech-ticker-pill">
+                            <span class="ticker-dot"></span>
+                            <span>B.Tech CSE (AIML) • 2nd Year</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Down Indicator -->
+            <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+                <span class="mouse-icon">
+                    <span class="wheel"></span>
+                </span>
+            </a>
+        </section>
+
+        <!-- ===================================================================
+             About Section
+             =================================================================== -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-badge-wrapper reveal">
+                    <span class="section-pill"><i class="fa-solid fa-sparkles"></i> Background</span>
+                </div>
+                <h2 class="section-title reveal">Where Algorithmic Intelligence Meets Precision Engineering</h2>
+                <p class="section-lead reveal">An engineering journey defined by relentless curiosity in AI and human-centered technology.</p>
+
+                <div class="about-grid">
+                    <!-- Card 1 -->
+                    <div class="glass-card about-card tilt-card reveal">
+                        <div class="card-glare"></div>
+                        <div class="about-card-icon-box icon-cyan">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="about-card-title">Academic Foundation</h3>
+                        <p class="about-card-text">
+                            Pursuing B.Tech Computer Science & Engineering (2nd Year) with an intensive concentration in <strong>Artificial Intelligence & Machine Learning</strong>, maintaining deep grounding in algorithms and mathematics.
+                        </p>
+                        <div class="card-footer-tag">B.Tech CSE (AI & ML)</div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="glass-card about-card tilt-card reveal">
+                        <div class="card-glare"></div>
+                        <div class="about-card-icon-box icon-indigo">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <h3 class="about-card-title">AI & Modeling Focus</h3>
+                        <p class="about-card-text">
+                            Passionate about training and fine-tuning neural architectures, generative modeling, computer vision pipelines, and building scalable interfaces that transform raw model weights into tangible value.
+                        </p>
+                        <div class="card-footer-tag">Deep Learning & GenAI</div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="glass-card about-card tilt-card reveal">
+                        <div class="card-glare"></div>
+                        <div class="about-card-icon-box icon-violet">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3 class="about-card-title">Product & Systems</h3>
+                        <p class="about-card-text">
+                            Belief in holistic engineering: combining high-speed full-stack backends with 60fps, responsive, and accessible user experiences that make complex systems feel effortlessly natural.
+                        </p>
+                        <div class="card-footer-tag">Interactive Full-Stack</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             Skills Section (Interactive Tech Stack Cloud)
+             =================================================================== -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-badge-wrapper reveal">
+                    <span class="section-pill"><i class="fa-solid fa-layer-group"></i> Capabilities</span>
+                </div>
+                <h2 class="section-title reveal">Production-Ready Tech Stack & Tooling</h2>
+                <p class="section-lead reveal">The languages, frameworks, deep learning stacks, and development environments I use.</p>
+
+                <div class="skills-master-grid">
+                    <!-- Category 1: AI & ML -->
+                    <div class="glass-card skill-card-box tilt-card reveal">
+                        <div class="card-glare"></div>
+                        <div class="skill-category-header">
+                            <div class="category-icon-wrapper ai-theme">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <div>
+                                <h3 class="category-heading">Artificial Intelligence & ML</h3>
+                                <p class="category-caption">Neural nets, computer vision & LLMs</p>
+                            </div>
+                        </div>
+
+                        <div class="skill-badge-cloud">
+                            <span class="skill-badge"><i class="fa-brands fa-python"></i> Python</span>
+                            <span class="skill-badge"><i class="fa-solid fa-robot"></i> Machine Learning</span>
+                            <span class="skill-badge"><i class="fa-solid fa-network-wired"></i> Deep Learning</span>
+                            <span class="skill-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> Generative AI</span>
+                            <span class="skill-badge"><i class="fa-solid fa-fire"></i> PyTorch</span>
+                            <span class="skill-badge"><i class="fa-solid fa-cube"></i> TensorFlow</span>
+                            <span class="skill-badge"><i class="fa-solid fa-eye"></i> Computer Vision</span>
+                            <span class="skill-badge"><i class="fa-solid fa-comments"></i> Prompt Engineering</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: Full-Stack Web Development -->
+                    <div class="glass-card skill-card-box tilt-card reveal">
+                        <div class="card-glare"></div>
+                        <div class="skill-category-header">
+                            <div class="category-icon-wrapper web-theme">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div>
+                                <h3 class="category-heading">Full-Stack Web Development</h3>
+                                <p class="category-caption">Modern reactive client & cloud architectures</p>
+                            </div>
+                        </div>
+
+                        <div class="skill-badge-cloud">
+                            <span class="skill-badge"><i class="fa-brands fa-html5"></i> HTML5 Semantic</span>
+                            <span class="skill-badge"><i class="fa-brands fa-css3-alt"></i> Modern CSS3</span>
+                            <span class="skill-badge"><i class="fa-brands fa-js"></i> JavaScript ES6+</span>
+                            <span class="skill-badge"><i class="fa-solid fa-bolt"></i> Supabase</span>
+                            <span class="skill-badge"><i class="fa-solid fa-arrows-split-up-and-left"></i> REST APIs</span>
+                            <span class="skill-badge"><i class="fa-solid fa-mobile-screen"></i> Responsive UI</span>
+                            <span class="skill-badge"><i class="fa-solid fa-palette"></i> Glassmorphism UI</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 3: Developer Tools & CS Core -->
+                    <div class="glass-card skill-card-box tilt-card reveal">
+                        <div class="card-glare"></div>
+                        <div class="skill-category-header">
+                            <div class="category-icon-wrapper tools-theme">
+                                <i class="fa-solid fa-terminal"></i>
+                            </div>
+                            <div>
+                                <h3 class="category-heading">Tools & CS Foundations</h3>
+                                <p class="category-caption">Version control, algorithms & workflows</p>
+                            </div>
+                        </div>
+
+                        <div class="skill-badge-cloud">
+                            <span class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git</span>
+                            <span class="skill-badge"><i class="fa-brands fa-github"></i> GitHub</span>
+                            <span class="skill-badge"><i class="fa-solid fa-code"></i> VS Code</span>
+                            <span class="skill-badge"><i class="fa-solid fa-diagram-project"></i> Data Structures</span>
+                            <span class="skill-badge"><i class="fa-solid fa-cloud"></i> Google Colab</span>
+                            <span class="skill-badge"><i class="fa-solid fa-database"></i> SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             Featured Projects Section
+             =================================================================== -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-badge-wrapper reveal">
+                    <span class="section-pill"><i class="fa-solid fa-fire"></i> Portfolio</span>
+                </div>
+                <h2 class="section-title reveal">Featured Engineering Projects</h2>
+                <p class="section-lead reveal">Selected AI applications and intelligent digital products built from scratch.</p>
+
+                <div class="project-showcase-list">
+                    <!-- Project 1: Sketch2UI -->
+                    <article class="glass-card project-showcase-card tilt-card reveal">
+                        <div class="card-glare"></div>
+                        
+                        <div class="project-content-side">
+                            <div class="project-meta-bar">
+                                <span class="project-tag-pill tag-cv">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i> Computer Vision & GenAI
+                                </span>
+                                <span class="project-featured-badge">Featured 01</span>
+                            </div>
+
+                            <h3 class="project-headline">Sketch2UI — Sketch to Code Synthesizer</h3>
+                            
+                            <p class="project-summary">
+                                An intelligent computer vision and generative AI platform that converts rough hand-drawn UI sketches on paper into pixel-clean, production-ready digital user interfaces with valid HTML, CSS, and interactive JavaScript.
+                            </p>
+
+                            <div class="project-highlights">
+                                <div class="highlight-item">
+                                    <i class="fa-solid fa-check-circle"></i>
+                                    <span>Automated layout parsing with deep neural feature extraction</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fa-solid fa-check-circle"></i>
+                                    <span>Real-time code preview canvas with responsive preview</span>
+                                </div>
+                            </div>
+
+                            <div class="tech-stack-row">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Computer Vision</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Generative AI</span>
+                                <span class="tech-tag">HTML5 / CSS3</span>
+                            </div>
+
+                            <div class="project-action-buttons">
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-magnetic">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>Source Code</span>
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-magnetic">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <span>Live Interactive Demo</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Mockup Preview Side -->
+                        <div class="project-preview-side">
+                            <div class="preview-terminal-window">
+                                <div class="terminal-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="terminal-title">Sketch2UI • AI Vision Pipeline</span>
+                                </div>
+                                <div class="terminal-body">
+                                    <div class="code-line"><span class="code-comment">// 1. Ingesting hand-drawn wireframe input</span></div>
+                                    <div class="code-line"><span class="code-keyword">const</span> model = <span class="code-func">loadVisionTransformer</span>(<span class="code-str">'sketch-v2'</span>);</div>
+                                    <div class="code-line"><span class="code-keyword">const</span> detections = <span class="code-keyword">await</span> model.<span class="code-func">detectElements</span>(image);</div>
+                                    <div class="code-line"><span class="code-comment">// 2. Hierarchical AST Component Synthesis</span></div>
+                                    <div class="code-line"><span class="code-keyword">const</span> uiCode = <span class="code-func">synthesizeDOM</span>(detections);</div>
+                                    <div class="code-output-card">
+                                        <div class="output-header">
+                                            <i class="fa-solid fa-circle-check"></i> Synthesis Result: 98.4% Accuracy
+                                        </div>
+                                        <div class="output-preview-bars">
+                                            <div class="mock-nav-bar"></div>
+                                            <div class="mock-hero-bar"></div>
+                                            <div class="mock-btn-bar"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: AI Interview Platform -->
+                    <article class="glass-card project-showcase-card tilt-card reveal">
+                        <div class="card-glare"></div>
+
+                        <div class="project-content-side">
+                            <div class="project-meta-bar">
+                                <span class="project-tag-pill tag-ai">
+                                    <i class="fa-solid fa-brain"></i> Generative AI & Full-Stack
+                                </span>
+                                <span class="project-featured-badge">Featured 02</span>
+                            </div>
+
+                            <h3 class="project-headline">AI Interview Platform — Career Readiness Assistant</h3>
+
+                            <p class="project-summary">
+                                A full-stack AI career preparation simulator that conducts adaptive technical and behavioral interviews. Powered by dynamic LLMs, real-time rubric evaluation, voice input analysis, and actionable score feedback.
+                            </p>
+
+                            <div class="project-highlights">
+                                <div class="highlight-item">
+                                    <i class="fa-solid fa-check-circle"></i>
+                                    <span>Adaptive question generation tailored to candidate experience</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fa-solid fa-check-circle"></i>
+                                    <span>Instant rubric breakdown: Technical depth, clarity, and metrics</span>
+                                </div>
+                            </div>
+
+                            <div class="tech-stack-row">
+                                <span class="tech-tag">Generative AI</span>
+                                <span class="tech-tag">Supabase</span>
+                                <span class="tech-tag">JavaScript (ES6+)</span>
+                                <span class="tech-tag">Prompt Engineering</span>
+                                <span class="tech-tag">Cloud Database</span>
+                            </div>
+
+                            <div class="project-action-buttons">
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-magnetic">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>Source Code</span>
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-magnetic">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <span>Live Interactive Demo</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Mockup Preview Side -->
+                        <div class="project-preview-side">
+                            <div class="preview-terminal-window">
+                                <div class="terminal-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="terminal-title">MockSession.ai • Real-Time Stream</span>
+                                </div>
+                                <div class="terminal-body">
+                                    <div class="chat-mock-bubble ai-bubble">
+                                        <div class="bubble-sender"><i class="fa-solid fa-robot"></i> AI Interviewer:</div>
+                                        <div class="bubble-text">"Can you explain the difference between supervised learning and contrastive self-supervised learning?"</div>
+                                    </div>
+                                    <div class="eval-mock-card">
+                                        <div class="eval-score-ring">
+                                            <span class="score-num">9.2</span>
+                                            <span class="score-max">/10</span>
+                                        </div>
+                                        <div class="eval-details">
+                                            <strong>Real-Time AI Rubric Feedback:</strong>
+                                            <p>Strong conceptual understanding of representation spaces. Clear algorithmic distinction.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             Achievements & Certifications Section
+             =================================================================== -->
+        <section id="achievements" class="section achievements-section">
+            <div class="container">
+                <div class="section-badge-wrapper reveal">
+                    <span class="section-pill"><i class="fa-solid fa-trophy"></i> Honors & Credentials</span>
+                </div>
+                <h2 class="section-title reveal">Achievements & Certifications</h2>
+                <p class="section-lead reveal">Proven track record in national hackathons, deep generative AI engineering, and professional excellence.</p>
+
+                <div class="bento-achievements-grid">
+                    <!-- Bento Card 1: CodeWars Hackathon Finalist (Featured Large Card) -->
+                    <div class="glass-card bento-card bento-card-featured tilt-card reveal">
+                        <div class="card-glare"></div>
+                        <div class="bento-glow-border"></div>
+
+                        <div class="bento-card-header">
+                            <div class="bento-tag-row">
+                                <span class="achievement-badge badge-finalist">
+                                    <i class="fa-solid fa-trophy"></i> Hackathon Finalist
+                                </span>
+                                <span class="achievement-date"><i class="fa-regular fa-calendar"></i> August 2026</span>
+                            </div>
+                            <div class="achievement-icon-box icon-trophy-glow">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                        </div>
+
+                        <div class="bento-card-body">
+                            <h3 class="bento-title">CodeWars Hackathon 2026</h3>
+                            <div class="bento-org-line">
+                                <i class="fa-solid fa-building-columns"></i>
+                                <span>Organized by <strong>Hacker's Unity & Arya College of Engineering & I.T.</strong></span>
+                            </div>
+
+                            <div class="achievement-metric-banner">
+                                <div class="metric-highlight">
+                                    <span class="metric-num">Top 130</span>
+                                    <span class="metric-label">Finalist Teams</span>
+                                </div>
+                                <div class="metric-divider"></div>
+                                <div class="metric-context">
+                                    <span>Selected among <strong>500+ competing teams</strong> nationwide for innovative problem-solving and rapid full-stack architecture.</span>
+                                </div>
+                            </div>
+
+                            <p class="bento-description">
+                                Pitched and developed an intelligent software solution under strict hackathon constraints, demonstrating exceptional algorithmic problem solving, system design, and collaborative engineering.
+                            </p>
+
+                            <div class="bento-tags-row">
+                                <span class="bento-tag">National Hackathon</span>
+                                <span class="bento-tag">System Design</span>
+                                <span class="bento-tag">Top Finalist</span>
+                                <span class="bento-tag">Team Leadership</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bento Card 2: ViCoDathon 2026 -->
+                    <div class="glass-card bento-card tilt-card reveal">
+                        <div class="card-glare"></div>
+                        <div class="bento-glow-border"></div>
+
+                        <div class="bento-card-header">
+                            <div class="bento-tag-row">
+                                <span class="achievement-badge badge-aiml">
+                                    <i class="fa-solid fa-brain"></i> AI / ML Credential
+                                </span>
+                                <span class="achievement-date"><i class="fa-regular fa-calendar"></i> August 2026</span>
+                            </div>
+                            <div class="achievement-icon-box icon-ai-glow">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                        </div>
+
+                        <div class="bento-card-body">
+                            <h3 class="bento-title">ViCoDathon 2026 — AI Vibe Coding</h3>
+                            <div class="bento-org-line">
+                                <i class="fa-solid fa-microchip"></i>
+                                <span>Organized by <strong>AB Talks (India's AI Vibe Coding Hackathon)</strong></span>
+                            </div>
+
+                            <div class="credential-id-box">
+                                <span class="id-label">Credential ID:</span>
+                                <button class="credential-id-pill" data-copy="ABT-HK-AW2HU" title="Click to copy credential ID">
+                                    <code>ABT-HK-AW2HU</code>
+                                    <i class="fa-regular fa-copy"></i>
+                                </button>
+                            </div>
+
+                            <p class="bento-description">
+                                Focused on next-generation AI vibe coding paradigms, prompt-driven solution engineering, rapid AI tool chaining, and autonomous prototyping for real-world software workflows.
+                            </p>
+
+                            <div class="bento-tags-row">
+                                <span class="bento-tag">AI Vibe Coding</span>
+                                <span class="bento-tag">Prompt Engineering</span>
+                                <span class="bento-tag">Rapid Prototyping</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bento Card 3: Generative AI Mastermind Certification -->
+                    <div class="glass-card bento-card tilt-card reveal">
+                        <div class="card-glare"></div>
+                        <div class="bento-glow-border"></div>
+
+                        <div class="bento-card-header">
+                            <div class="bento-tag-row">
+                                <span class="achievement-badge badge-aiml">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i> AI / ML Credential
+                                </span>
+                                <span class="verified-pill">
+                                    <i class="fa-solid fa-circle-check"></i> Verified
+                                </span>
+                            </div>
+                            <div class="achievement-icon-box icon-genai-glow">
+                                <i class="fa-solid fa-dna"></i>
+                            </div>
+                        </div>
+
+                        <div class="bento-card-body">
+                            <h3 class="bento-title">Generative AI Mastermind</h3>
+                            <div class="bento-org-line">
+                                <i class="fa-solid fa-certificate"></i>
+                                <span>Issued by <strong>Outskill x Moneycontrol</strong> (Mentored by Vaibhav Sisinty)</span>
+                            </div>
+
+                            <p class="bento-description">
+                                Comprehensive executive certification covering Large Language Models (LLMs), Generative AI pipelines, prompt engineering optimization, autonomous agent architectures, and enterprise AI workflows.
+                            </p>
+
+                            <div class="bento-tags-row">
+                                <span class="bento-tag">LLM Fine-Tuning</span>
+                                <span class="bento-tag">AI Agent Workflows</span>
+                                <span class="bento-tag">Generative AI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bento Card 4: Employability & Professional Skills Certification -->
+                    <div class="glass-card bento-card tilt-card reveal">
+                        <div class="card-glare"></div>
+                        <div class="bento-glow-border"></div>
+
+                        <div class="bento-card-header">
+                            <div class="bento-tag-row">
+                                <span class="achievement-badge badge-pro">
+                                    <i class="fa-solid fa-user-tie"></i> Professional Development
+                                </span>
+                                <span class="achievement-date"><i class="fa-regular fa-calendar"></i> September 2026</span>
+                            </div>
+                            <div class="achievement-icon-box icon-pro-glow">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                        </div>
+
+                        <div class="bento-card-body">
+                            <h3 class="bento-title">Employability & Professional Skills</h3>
+                            <div class="bento-org-line">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span>Issued by <strong>Mahindra Pride Classroom (Naandi Foundation)</strong></span>
+                            </div>
+
+                            <p class="bento-description">
+                                Professional workplace readiness training emphasizing agile cross-functional collaboration, active leadership communication, problem solving in corporate settings, and career excellence.
+                            </p>
+
+                            <div class="bento-tags-row">
+                                <span class="bento-tag">Workplace Readiness</span>
+                                <span class="bento-tag">Agile Collaboration</span>
+                                <span class="bento-tag">Executive Communication</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             Contact Section
+             =================================================================== -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-badge-wrapper reveal">
+                    <span class="section-pill"><i class="fa-solid fa-paper-plane"></i> Contact</span>
+                </div>
+                <h2 class="section-title reveal">Let's Build Something Extraordinary</h2>
+                <p class="section-lead reveal">Have an internship opening, research collaboration, or project idea? Reach out directly.</p>
+
+                <div class="contact-hub-card glass-card reveal">
+                    <div class="contact-hub-grid">
+                        <!-- Direct Info -->
+                        <div class="contact-details-col">
+                            <h3 class="hub-title">Get in Touch</h3>
+                            <p class="hub-desc">
+                                I am actively seeking <strong>Summer 2026 AI / Machine Learning & Software Engineering internships</strong>. Whether you have questions or want to collaborate, my inbox is always open.
+                            </p>
+
+                            <div class="hub-contact-list">
+                                <div class="hub-item">
+                                    <div class="hub-icon-box">
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </div>
+                                    <div class="hub-info-text">
+                                        <span class="hub-label">Direct Email</span>
+                                        <a href="mailto:naina.maurya.ai@gmail.com" class="hub-value">naina.maurya.ai@gmail.com</a>
+                                    </div>
+                                </div>
+
+                                <div class="hub-item">
+                                    <div class="hub-icon-box">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </div>
+                                    <div class="hub-info-text">
+                                        <span class="hub-label">LinkedIn Profile</span>
+                                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="hub-value">linkedin.com/in/naina-maurya</a>
+                                    </div>
+                                </div>
+
+                                <div class="hub-item">
+                                    <div class="hub-icon-box">
+                                        <i class="fa-brands fa-github"></i>
+                                    </div>
+                                    <div class="hub-info-text">
+                                        <span class="hub-label">GitHub Repositories</span>
+                                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="hub-value">github.com/naina-maurya</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hub-availability-pill">
+                                <span class="pulse-dot"></span>
+                                <span>Status: Open to Internship Offers & Research Roles</span>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Form -->
+                        <div class="contact-form-col">
+                            <form id="contactForm" class="hub-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="name">Your Name</label>
+                                        <div class="input-container">
+                                            <i class="fa-regular fa-user field-icon"></i>
+                                            <input type="text" id="name" name="name" placeholder="e.g. Alex Morgan" required autocomplete="name">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="email">Your Email</label>
+                                        <div class="input-container">
+                                            <i class="fa-regular fa-envelope field-icon"></i>
+                                            <input type="email" id="email" name="email" placeholder="e.g. alex@company.com" required autocomplete="email">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="subject">Subject / Purpose</label>
+                                    <div class="input-container">
+                                        <i class="fa-solid fa-briefcase field-icon"></i>
+                                        <input type="text" id="subject" name="subject" placeholder="e.g. Summer 2026 AI Internship Opportunity" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <div class="input-container textarea-container">
+                                        <i class="fa-regular fa-comment-dots field-icon"></i>
+                                        <textarea id="message" name="message" rows="4" placeholder="Tell me about your team, project, or opportunity..." required></textarea>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-block btn-magnetic" id="submitBtn">
+                                    <span>Send Message</span>
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                                <div id="formFeedback" class="form-feedback" aria-live="polite"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===================================================================
+         Footer
+         =================================================================== -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <a href="#home" class="footer-logo">
+                    <span>Naina Maurya</span><span class="gradient-accent">.</span>
+                </a>
+                <p class="footer-tagline">
+                    Engineering intelligence at the intersection of AI, machine learning, and interactive software.
+                </p>
+                <div class="footer-nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#achievements">Achievements</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2026 Naina Maurya. All Rights Reserved.</p>
+                <p class="designed-by">Built with Modern HTML5, CSS3 & High-Performance Vanilla JS</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive JS Engine -->
+    <script src="script.js" defer></script>
+</body>
+
+</html>
